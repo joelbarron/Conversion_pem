@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="es">
+<meta charset="utf-8">
+    <title>Conversion .key .cer a .pem | Factucare</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+</head>
+
+<body>
+    <!--    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Project name</a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="#">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+-->
+    <div class="container">
+        <div class="starter-template">
+            <h1>Factucare</h1>
+            <h2>Conversion .key .cer a .pem</h2>
+            <p class="lead">Esta pagina te ayudara a convertir un archivo .key o . cer a .pem
+                <br> Seleciona una de las dos opciones.</p>
+        </div>
+        <!--
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                 <a href="cer.html" class="btn btn-primary">.cer a .pem</a>
+                <a href="key.html" class="btn btn-warning">.key a .pem</a>
+            </div>
+        </div>
+        
+-->
+        <div class="row" style="width: 100%; ">
+            <div class="col-md-6" style="padding-left: 9%;">
+                <div class="starter-template">
+                    <h1 style="text-align:left;">Convertir .cer a .pem</h1> </div>
+                <form action="convertir_cer.php" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <div class="input-group" style="padding-bottom: 60px;">
+                            <label for="">Seleciona el archivo</label>
+                            <input type="file" class="form-control" name="archivo_cer" required=""></div>
+                    </div>
+                    <button type="submit" class="btn btn-success">Convertir</button>
+                </form>
+            </div>
+            <div class="col-md-6" style="padding-left: 9%;">
+                <div class="starter-template">
+                    <h1 style="text-align:left;">Convertir .key a .pem</h1> </div>
+                <form action="convertir_key.php" method="post" enctype="multipart/form-data">
+                    <div class="form-group">
+                        <div class="input-group">
+                            <label for="">Seleciona el archivo</label>
+                            <input type="file" class="form-control" name="archivo_key" required=""> </div>
+                            <div class="input-group">
+                            <label for="">Escribe la contraseña</label>
+                            <input type="text" class="form-control" name="pass" required=""> </div>
+                    </div>
+                    <button type="submit" class="btn btn-success">Convertir</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- /.container -->
+</body>
+
+</html>
